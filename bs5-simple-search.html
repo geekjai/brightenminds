@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='width=device-width' name='viewport'/>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .form-control:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: inset 0 0 0 transparent;
+      }
+      .search-iconbtn-append {
+        display: -ms-flexbox;
+        display: flex;
+        margin-left: -1px;
+      }
+      .search-iconbtn-append .btn, .input-group-prepend .btn {
+        position: relative;
+        z-index: 2;
+      }
+      .input-group>.search-iconbtn-append>.btn, .input-group>.search-iconbtn-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      .search-btn-default {
+        background-color: #f8f9fa;
+        border-color: #ddd;
+        color: #444;
+      }
+      .search-btn-default:active, .search-btn-default:hover {
+        background-color: #e9ecef;
+        color: #2b2b2b;
+      }
+    </style>
+  </head>
+  <body id="body-pd" style="background-color: rgb(222, 226, 230);">
+    <section class="content" style="margin-top: 20px;">
+      <div class="row">
+        <h2 class="text-center display-4">Brighten Minds</h2>
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <form action="https://www.brightenminds.com/">
+              <div class="input-group">
+                <input type="search" class="form-control form-control-lg" placeholder="Type your keywords here">
+                <div class="search-iconbtn-append">
+                  <button type="submit" class="btn btn-lg search-btn-default">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
