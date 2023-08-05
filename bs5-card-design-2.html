@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='width=device-width' name='viewport'/>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
+    <style>
+      :root {
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --light: #f8f9fa;
+        --dark: #1f2d3d;
+      }
+      .card-primary:not(.card-outline)>.card-header {
+        background-color: var(--blue);
+        color: var(--white);
+      }
+      .card-primary.card-outline {
+        border-top: 3px solid var(--blue);
+      }
+      .card-info:not(.card-outline)>.card-header {
+        background-color: var(--cyan);
+        color: var(--white);
+      }
+      .card-info.card-outline {
+        border-top: 3px solid var(--cyan);
+      }
+      .card-warning:not(.card-outline)>.card-header {
+        background-color: var(--yellow);
+        color: var(--dark);
+      }
+      .card-warning.card-outline {
+        border-top: 3px solid var(--yellow);
+      }
+      .card-danger:not(.card-outline)>.card-header {
+        background-color: var(--red);
+        color: var(--white);
+      }
+      .card-danger.card-outline {
+        border-top: 3px solid var(--red);
+      }
+      .card-dark:not(.card-outline)>.card-header {
+        background-color: var(--gray-dark);
+        color: var(--white);
+      }
+      .card-dark.card-outline {
+        border-top: 3px solid var(--gray-dark);
+      }
+      .card-success:not(.card-outline)>.card-header {
+        background-color: var(--green);
+        color: var(--white);
+      }
+      .card-success.card-outline {
+        border-top: 3px solid var(--green);
+      }
+      .card-secondary:not(.card-outline)>.card-header {
+        background-color: var(--gray);
+        color: var(--white);
+      }
+      .card-secondary.card-outline {
+        border-top: 3px solid var(--gray);
+      }
+      .card {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body id="body-pd" style="background-color: rgb(222, 226, 230);">
+    <section class="content" style="margin-top: 10px; margin-bottom: 10px;">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- card-primary -->
+          <div class="col-lg-4 col-6">
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Brighten Minds</h3>
+              </div>
+              <div class="card-body">
+                <span>Card Body</span>
+              </div>
+              <div class="card-footer">
+                <span>Card Footer</span>
+              </div>
+            </div>
+          </div>
+          <!-- card-info -->
+          <div class="col-lg-4 col-6">
+            <div class="card card-info">
+              <div class="card-header">
+                <h3 class="card-title">Brighten Minds</h3>
+              </div>
+              <div class="card-body">
+                <span>Card Body</span>
+              </div>
+              <div class="card-footer">
+                <span>Card Footer</span>
+              </div>
+            </div>
+          </div>
+          <!-- card-warning -->
+          <div class="col-lg-4 col-6">
+            <div class="card card-warning">
+              <div class="card-header">
+                <h3 class="card-title">Brighten Minds</h3>
+              </div>
+              <div class="card-body">
+                <span>Card Body</span>
+              </div>
+              <div class="card-footer">
+                <span>Card Footer</span>
+              </div>
+            </div>
+          </div>
+          <!-- card-danger -->
+          <div class="col-lg-4 col-6">
+            <div class="card card-danger">
+              <div class="card-header">
+                <h3 class="card-title">Brighten Minds</h3>
+              </div>
+              <div class="card-body">
+                <span>Card Body</span>
+              </div>
+              <div class="card-footer">
+                <span>Card Footer</span>
+              </div>
+            </div>
+          </div>
+          <!-- card-dark -->
+          <div class="col-lg-4 col-6">
+            <div class="card card-dark">
+              <div class="card-header">
+                <h3 class="card-title">Brighten Minds</h3>
+              </div>
+              <div class="card-body">
+                <span>Card Body</span>
+              </div>
+              <div class="card-footer">
+                <span>Card Footer</span>
+              </div>
+            </div>
+          </div>
+          <!-- card-success -->
+          <div class="col-lg-4 col-6">
+            <div class="card card-success">
+              <div class="card-header">
+                <h3 class="card-title">Brighten Minds</h3>
+              </div>
+              <div class="card-body">
+                <span>Card Body</span>
+              </div>
+              <div class="card-footer">
+                <span>Card Footer</span>
+              </div>
+            </div>
+          </div>
+          <!-- card-secondary -->
+          <div class="col-lg-4 col-6">
+            <div class="card card-secondary">
+              <div class="card-header">
+                <h3 class="card-title">Brighten Minds</h3>
+              </div>
+              <div class="card-body">
+                <span>Card Body</span>
+              </div>
+              <div class="card-footer">
+                <span>Card Footer</span>
+              </div>
+            </div>
+          </div>
+          <!-- card default-->
+          <div class="col-lg-4 col-6">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Brighten Minds</h3>
+              </div>
+              <div class="card-body">
+                <span>Card Body</span>
+              </div>
+              <div class="card-footer">
+                <span>Card Footer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+        <!-- card-outline card-primary card-primary -->
+          <div class="col-lg-4 col-6">
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h3 class="card-title">Brighten Minds</h3>
+              </div>
+              <div class="card-body">
+                <span>Card Body</span>
+              </div>
+              <div class="card-footer">
+                <span>Card Footer</span>
+              </div>
+            </div>
+          </div>
+          <!-- card-info -->
+          <div class="col-lg-4 col-6">
+            <div class="card card-info card-outline">
+              <div class="card-header">
+                <h3 class="card-title">Brighten Minds</h3>
+              </div>
+              <div class="card-body">
+                <span>Card Body</span>
+              </div>
+              <div class="card-footer">
+                <span>Card Footer</span>
+              </div>
+            </div>
+          </div>
+          <!-- card-warning -->
+          <div class="col-lg-4 col-6">
+            <div class="card card-warning card-outline">
+              <div class="card-header">
+                <h3 class="card-title">Brighten Minds</h3>
+              </div>
+              <div class="card-body">
+                <span>Card Body</span>
+              </div>
+              <div class="card-footer">
+                <span>Card Footer</span>
+              </div>
+            </div>
+          </div>
+          <!-- card-danger -->
+          <div class="col-lg-4 col-6">
+            <div class="card card-danger card-outline">
+              <div class="card-header">
+                <h3 class="card-title">Brighten Minds</h3>
+              </div>
+              <div class="card-body">
+                <span>Card Body</span>
+              </div>
+              <div class="card-footer">
+                <span>Card Footer</span>
+              </div>
+            </div>
+          </div>
+          <!-- card-dark -->
+          <div class="col-lg-4 col-6">
+            <div class="card card-dark card-outline">
+              <div class="card-header">
+                <h3 class="card-title">Brighten Minds</h3>
+              </div>
+              <div class="card-body">
+                <span>Card Body</span>
+              </div>
+              <div class="card-footer">
+                <span>Card Footer</span>
+              </div>
+            </div>
+          </div>
+          <!-- card-success -->
+          <div class="col-lg-4 col-6">
+            <div class="card card-success card-outline">
+              <div class="card-header">
+                <h3 class="card-title">Brighten Minds</h3>
+              </div>
+              <div class="card-body">
+                <span>Card Body</span>
+              </div>
+              <div class="card-footer">
+                <span>Card Footer</span>
+              </div>
+            </div>
+          </div>
+          <!-- card-secondary -->
+          <div class="col-lg-4 col-6">
+            <div class="card card-secondary card-outline">
+              <div class="card-header">
+                <h3 class="card-title">Brighten Minds</h3>
+              </div>
+              <div class="card-body">
+                <span>Card Body</span>
+              </div>
+              <div class="card-footer">
+                <span>Card Footer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
