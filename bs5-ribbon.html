@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='width=device-width' name='viewport'/>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
+    <style>
+      :root {
+      --blue: #007bff;
+      --indigo: #6610f2;
+      --purple: #6f42c1;
+      --pink: #e83e8c;
+      --red: #dc3545;
+      --orange: #fd7e14;
+      --yellow: #ffc107;
+      --green: #28a745;
+      --teal: #20c997;
+      --cyan: #17a2b8;
+      --white: #fff;
+      --gray: #6c757d;
+      --gray-dark: #343a40;
+      --light: #f8f9fa;
+      --dark: #1f2d3d;
+      }
+      body {
+      background-color: rgb(222, 226, 230);
+      }
+      .content {
+      margin-top: 10px; 
+      margin-bottom: 10px;
+      }
+      .ribbon-wrapper {
+      position: relative!important;
+      padding: 1rem!important;
+      background-color: var(--gray);!important;
+      color: var(--white);
+      height: 180px;
+      }
+      .ribbon-wrapper-inner {
+      height: 70px;
+      overflow: hidden;
+      position: absolute;
+      right: -2px;
+      top: -2px;
+      width: 70px;
+      z-index: 10;
+      }
+      .ribbon-wrapper-inner .ribbon {
+      box-shadow: 0 0 3px rgba(0,0,0,.3);
+      font-size: .8rem;
+      line-height: 100%;
+      padding: 0.375rem 0;
+      position: relative;
+      right: -2px;
+      text-align: center;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.4);
+      text-transform: uppercase;
+      top: 10px;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      width: 90px;
+      }
+      .ribbon-wrapper-inner.ribbon-lg {
+      height: 120px;
+      width: 120px;
+      }
+      .ribbon-wrapper-inner.ribbon-lg .ribbon {
+      right: 0;
+      top: 26px;
+      width: 160px;
+      font-size: 1.25rem!important;
+      }
+      .ribbon-wrapper-inner.ribbon-xl {
+      height: 180px;
+      width: 180px;
+      }
+      .ribbon-wrapper-inner.ribbon-xl .ribbon {
+      right: 0;
+      top: 26px;
+      width: 160px;
+      font-size: 1.25rem!important;
+      }
+      .ribbon-wrapper-inner.ribbon-xl .ribbon {
+      right: 4px;
+      top: 47px;
+      width: 240px;
+      font-size: 1.25rem!important;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="ribbon-wrapper">
+              <div class="ribbon-wrapper-inner">
+                <div class="ribbon bg-success">
+                  Ribbon
+                </div>
+              </div>
+              Ribbon Default<br/>
+              <small>.ribbon-wrapper > .ribbon-wrapper-inner > .ribbon</small>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="ribbon-wrapper">
+              <div class="ribbon-wrapper-inner ribbon-lg">
+                <div class="ribbon bg-success">
+                  Ribbon
+                </div>
+              </div>
+              Ribbon Large<br/>
+              <small>.ribbon-wrapper > .ribbon-wrapper-inner.ribbon-lg > .ribbon</small>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="ribbon-wrapper">
+              <div class="ribbon-wrapper-inner ribbon-xl">
+                <div class="ribbon bg-success">
+                  Ribbon
+                </div>
+              </div>
+              Ribbon Extra Large<br/>
+              <small>.ribbon-wrapper > .ribbon-wrapper-inner.ribbon-xl > .ribbon</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
