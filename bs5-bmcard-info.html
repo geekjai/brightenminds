@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='width=device-width' name='viewport'/>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      :root {
+      --blue: #007bff;
+      --indigo: #6610f2;
+      --purple: #6f42c1;
+      --pink: #e83e8c;
+      --red: #dc3545;
+      --orange: #fd7e14;
+      --yellow: #ffc107;
+      --green: #28a745;
+      --teal: #20c997;
+      --cyan: #17a2b8;
+      --white: #fff;
+      --gray: #6c757d;
+      --gray-dark: #343a40;
+      --light: #f8f9fa;
+      --dark: #1f2d3d;
+      }
+      .bmcard-info {
+      box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+      border-radius: 0.25rem;
+      background-color: #fff;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 1rem;
+      min-height: 80px;
+      padding: 0.5rem;
+      position: relative;
+      width: 100%;
+      }
+      .bmcard-info .bmcard-info-icon {
+      border-radius: 0.25rem;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 1.875rem;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+      width: 70px;
+      }
+      .bmcard-info .bmcard-info-content {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      line-height: 1.8;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      padding: 0 10px;
+      }
+      .bmcard-info .bmcard-info-text {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      }
+      .bmcard-info .bmcard-info-number {
+      display: block;
+      margin-top: 0.25rem;
+      font-weight: 700;
+      }
+      .bmcard-info.card-info .bmcard-info-icon {
+        background-color: var(--cyan);
+        color: var(--white);
+      }
+      .bmcard-info.card-success .bmcard-info-icon {
+        background-color: var(--green);
+        color: var(--white);
+      }
+      .bmcard-info.card-warning .bmcard-info-icon {
+        background-color: var(--yellow);
+        color: var(--dark);
+      }
+      .bmcard-info.card-primary .bmcard-info-icon {
+        background-color: var(--blue);
+        color: var(--white);
+      }
+      .bmcard-info.card-danger .bmcard-info-icon {
+        background-color: var(--red);
+        color: var(--white);
+      }
+      .bmcard-info.card-dark .bmcard-info-icon {
+        background-color: var(--gray-dark);
+        color: var(--white);
+      }
+      .bmcard-info.card-secondary .bmcard-info-icon {
+        background-color: var(--gray);
+        color: var(--white);
+      }
+    </style>
+  </head>
+  <body id="body-pd" style="background-color: rgb(222, 226, 230);">
+    <section class="content" style="margin-top: 10px; margin-bottom: 10px;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="bmcard-info card-info">
+              <span class="bmcard-info-icon bg-info"><i class="far fa-envelope"></i></span>
+              <div class="bmcard-info-content">
+                <span class="bmcard-info-text">Messages</span>
+                <span class="bmcard-info-number">1,410</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="bmcard-info card-success">
+              <span class="bmcard-info-icon"><i class="far fa-flag"></i></span>
+              <div class="bmcard-info-content">
+                <span class="bmcard-info-text">Bookmarks</span>
+                <span class="bmcard-info-number">410</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="bmcard-info card-warning">
+              <span class="bmcard-info-icon"><i class="far fa-copy"></i></span>
+              <div class="bmcard-info-content">
+                <span class="bmcard-info-text">Uploads</span>
+                <span class="bmcard-info-number">13,648</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="bmcard-info card-primary">
+              <span class="bmcard-info-icon"><i class="fa-solid fa-download"></i></span>
+              <div class="bmcard-info-content">
+                <span class="bmcard-info-text">Downloads</span>
+                <span class="bmcard-info-number">1300</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="bmcard-info card-danger">
+              <span class="bmcard-info-icon"><i class="far fa-eye"></i></span>
+              <div class="bmcard-info-content">
+                <span class="bmcard-info-text">Viewed</span>
+                <span class="bmcard-info-number">1,00,500</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="bmcard-info card-dark">
+              <span class="bmcard-info-icon"><i class="fa-solid fa-globe"></i></span>
+              <div class="bmcard-info-content">
+                <span class="bmcard-info-text">Visited</span>
+                <span class="bmcard-info-number">250</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="bmcard-info card-secondary">
+              <span class="bmcard-info-icon"><i class="fa-solid fa-file"></i></span>
+              <div class="bmcard-info-content">
+                <span class="bmcard-info-text">Files</span>
+                <span class="bmcard-info-number">13,648</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
